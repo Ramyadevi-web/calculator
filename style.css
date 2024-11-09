@@ -1,0 +1,45 @@
+.buttons{
+   display: grid;
+   grid-template-columns: auto auto;
+   width: 460px;
+   margin: 15px 20px;
+   border: none;
+}
+#equal{
+    grid-column: -1/span 2;
+    background-color: rgb(0, 0, 255,0.8);
+    color: white;
+}
+#equal:hover{
+    background-color: blue;
+}
+#clear{
+    color : red;
+    font-weight: 400;
+}
+.buttons > button{
+    display: flex;
+    height: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: none;
+}
+button:active{
+    background-color: rgb(124, 116, 116,0.2);
+}
+
+/* input field UI */
+#result{
+    background-color : rgba(128, 128, 128, 0.26);
+    width : 460pX;
+    height : 85px;
+    margin : 15px 20px;
+    border : none;
+}
+
+h1,p{
+    display: flex;
+    justify-content: center;
+}
