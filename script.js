@@ -19,7 +19,7 @@ let data = ['C','<-','.','*','7','8','9','/','4','5','6','-','1','2','3','+','0'
 calc.style.backgroundColor = "#8073731a";
 calc.style.width = "500px";
 calc.style.height = "500px";
-calc.style.margin = "15% 30% 25% 30%";
+calc.style.margin = "5% 25% 25%";
 calc.style.border = "1px solid #8080803b";
 calc.style.boxShadow = "1px 0px 3px 0px";
 
