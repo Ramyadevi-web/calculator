@@ -6,9 +6,10 @@ P.id = "description";
 
 let dispScreen = document.createElement("input");
 let buttonsContainer = document.createElement("div");
-buttonsContainer.className = "buttons"
+buttonsContainer.className = "buttons";
 dispScreen.type = "text";
 dispScreen.id = "result";
+dispScreen.value = "";
 
 h1.innerHTML = "Calculator";
 P.innerHTML = "Basic calculator designed to practice and improve the developing skill."
@@ -31,6 +32,7 @@ calc.appendChild(buttonsContainer);
 //appending the value to display screen
 let appendToDisplay = (val) => {
     dispScreen.value =dispScreen.value+''+val;
+    console.log("disval val",dispScreen.value,val)
 }
 
 //function to clear display
@@ -122,10 +124,14 @@ data.forEach(item =>{
 
 window.addEventListener('keydown',(e)=>{
     let keyVal = e.key;
+    // console.log(keyval)
     let currValue = dispScreen.value;
 
-    if('0123456789+-*/'.includes(keyVal))
+    if((keyVal>=0) && (keyVal<=9)){
         appendToDisplay(keyVal)
+        // return;
+    }
+        
     else if((keyVal == "Shift" && keyVal == "="))
         appendToDisplay("+")
     else if((keyVal == "Shift" && keyVal == "8"))
